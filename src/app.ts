@@ -1,7 +1,12 @@
-console.log("Hello, This is app.ts");
+let fname: string = "Hello, Application!";
+let age: number = 20;
+age +=7
+let isAdmin: boolean = true;
 
-function total(a:number, b:number) {
-    return a + b;
-}
+console.log(fname);
+console.log(age);
+console.log(isAdmin);
 
-console.log(total(10, 20));
+console.log( `ชื่อ = ${fname.toUpperCase()}` );
+console.log( `อายุ = ${age}` );
+console.log( `สถานะ = ${isAdmin}` );

@@ -1,6 +1,11 @@
 "use strict";
-console.log("Hello, This is app.ts");
-function total(a, b) {
-    return a + b;
-}
-console.log(total(10, 20));
+let fname = "Hello, Application!";
+let age = 20;
+age += 7;
+let isAdmin = true;
+console.log(fname);
+console.log(age);
+console.log(isAdmin);
+console.log(`ชื่อ = ${fname.toUpperCase()}`);
+console.log(`อายุ = ${age}`);
+console.log(`สถานะ = ${isAdmin}`);
