@@ -1,12 +1,13 @@
-let fname: string = "Hello, Application!";
-let age: number = 20;
-age +=7
-let isAdmin: boolean = true;
+// Any และ Unknown
+function formartNumber(num: number) {
+  return num.toFixed(2);
+}
 
-console.log(fname);
-console.log(age);
-console.log(isAdmin);
+let money: unknown = 32168.165; // ตัวแปรชนิด unknown
 
-console.log( `ชื่อ = ${fname.toUpperCase()}` ); // แปลงเป็นตัวพิมพ์ใหญ่
-console.log( `อายุ = ${age}` );
-console.log( `สถานะ = ${isAdmin}` );
+// ต้องตรวจสอบชนิดข้อมูลก่อนใช้งาน
+if (typeof money === "number") {
+  console.log(formartNumber(money));
+}
+
+
