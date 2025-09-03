@@ -1,13 +1,18 @@
-let amount:number = 10;
-let result:string;
+let service: number = 0;
+let result: string;
 
-if (amount % 2 === 0) {
-    result = "Even";
+switch (service) {
+  case 1:
+    result = "สอบถามยอดเงินในบัญชี";
+    break;
+  case 2:
+    result = "ฝากเงินเข้าบัญชี";
+    break;
+  case 3:
+    result = "ถอนเงินจากบัญชี";
+    break;
+  default:
+    result = "บริการอื่นๆ";
+    break;
 }
-else {
-    result = "Odd";
-}
-
-result = amount % 2 === 0 ? "Even" : "Odd";
-
-console.log(`จำนวน = ${amount} เป็น ${result}`);
+console.log(`result = ${result}`);
