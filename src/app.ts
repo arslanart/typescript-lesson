@@ -1,3 +1,13 @@
-let username: unknown;
-username = "John";
-console.log((username as string).toUpperCase()); // type assertion
+let amount:number = 10;
+let result:string;
+
+if (amount % 2 === 0) {
+    result = "Even";
+}
+else {
+    result = "Odd";
+}
+
+result = amount % 2 === 0 ? "Even" : "Odd";
+
+console.log(`จำนวน = ${amount} เป็น ${result}`);
