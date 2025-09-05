@@ -1,21 +1,13 @@
 "use strict";
-//OOP
-//ไม่ระบุชนิดข้อมูล
-const person = {
-    name: "John",
-    age: 30,
-};
-//ระบุชนิดข้อมูล
-const person2 = {
-    name: "John",
-    age: 30,
-};
+// ฟังก์ชันที่คืนค่าจาก object
 const position = {
     lat: 10,
-    long: 20
+    long: 20,
 };
-//ฟังก์ชันรับค่าจาก object
-function showDetails(data) {
-    console.log(`My name is ${data.name} and I'm ${data.age} years old.`);
+function randomPosition() {
+    return {
+        lat: Math.random(),
+        long: Math.random()
+    };
 }
-showDetails(person2);
+console.log(randomPosition());
