@@ -1,11 +1,8 @@
-//ฟังก์ชัน =>
-const checkNumber=(num: number): string => {
-    if(num > 0) {
-        return "Positive number";
-    } else if(num < 0) {
-        return "Negative number";
-    }
-    return "Zero";
-};
+//ฟังก์ชันที่มีค่าเริ่มต้น
+function userInfo(name: string, age: number = 180000): void {
+  console.log(`Name: ${name}, Age: ${age}`);
+}
 
-console.log(checkNumber(10));
+userInfo("Alice", 30); // Name: Alice, Age: 30
+userInfo("Bob", 25);   // Name: Bob, Age: 25
+userInfo("Charlie");    // Name: Charlie, Age: 18
