@@ -1,13 +1,30 @@
 "use strict";
-// for(let count=1; count<=10; count++){
-//     console.log(`Count is: ${count}`);
+//ฟังกก์ชัน void
+// function sayHello(){
+//     console.log("Hello, TypeScript!");
 // }
-let users = ['Alice', 'Bob', 'Charlie', 'Diana'];
-// แบบ for
-for (let i = 0; i < users.length; i++) {
-    console.log(`User ${i + 1}: ${users[i]}`);
+// sayHello();
+//ฟังก์ชันที่มีการส่ง Parameter
+// function sayHello(name: string): void {
+//     console.log (`Hello, ${name}!`);
+// }
+// sayHello("TypeScript");
+//ฟังก์ชันที่มีการส่งค่ากลับ Return Type
+// function getDiscount(): number {
+//   return 500;
+// }
+// console.log(getDiscount());
+//ฟังก์ชันที่มีการส่ง Parameter และค่ากลับ
+function checkNumber(num) {
+    if (num % 2 === 0) {
+        return `${num} is an even number.`;
+    }
+    else {
+        return `${num} is an odd number.`;
+    }
 }
-// แบบ for...each
-// users.forEach((user, index) => {
-//     console.log(`User ${index + 1}: ${user}`);
-// });
+function total(a, b) {
+    return a + b;
+}
+console.log(total(100, 200));
+console.log(checkNumber(5));
