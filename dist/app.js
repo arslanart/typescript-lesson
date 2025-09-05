@@ -1,30 +1,12 @@
 "use strict";
-//ฟังกก์ชัน void
-// function sayHello(){
-//     console.log("Hello, TypeScript!");
-// }
-// sayHello();
-//ฟังก์ชันที่มีการส่ง Parameter
-// function sayHello(name: string): void {
-//     console.log (`Hello, ${name}!`);
-// }
-// sayHello("TypeScript");
-//ฟังก์ชันที่มีการส่งค่ากลับ Return Type
-// function getDiscount(): number {
-//   return 500;
-// }
-// console.log(getDiscount());
-//ฟังก์ชันที่มีการส่ง Parameter และค่ากลับ
-function checkNumber(num) {
-    if (num % 2 === 0) {
-        return `${num} is an even number.`;
+//ฟังก์ชัน =>
+const checkNumber = (num) => {
+    if (num > 0) {
+        return "Positive number";
     }
-    else {
-        return `${num} is an odd number.`;
+    else if (num < 0) {
+        return "Negative number";
     }
-}
-function total(a, b) {
-    return a + b;
-}
-console.log(total(100, 200));
-console.log(checkNumber(5));
+    return "Zero";
+};
+console.log(checkNumber(10));
