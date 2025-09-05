@@ -1,18 +1,13 @@
 "use strict";
-let service = 0;
-let result;
-switch (service) {
-    case 1:
-        result = "สอบถามยอดเงินในบัญชี";
-        break;
-    case 2:
-        result = "ฝากเงินเข้าบัญชี";
-        break;
-    case 3:
-        result = "ถอนเงินจากบัญชี";
-        break;
-    default:
-        result = "บริการอื่นๆ";
-        break;
+// for(let count=1; count<=10; count++){
+//     console.log(`Count is: ${count}`);
+// }
+let users = ['Alice', 'Bob', 'Charlie', 'Diana'];
+// แบบ for
+for (let i = 0; i < users.length; i++) {
+    console.log(`User ${i + 1}: ${users[i]}`);
 }
-console.log(`result = ${result}`);
+// แบบ for...each
+// users.forEach((user, index) => {
+//     console.log(`User ${index + 1}: ${user}`);
+// });
