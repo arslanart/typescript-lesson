@@ -1,13 +1,28 @@
-// ฟังก์ชันที่คืนค่าจาก object
-const position: { lat: number; long: number } = {
-  lat: 10,
-  long: 20,
+// Type Aliases
+type Employee = {
+  id: number;
+  name: string;
+  salary: number;
+  phone: string;
 };
 
-function randomPosition(): { lat: number; long: number } {
-  return { 
-    lat: Math.random(), 
-    long: Math.random()
-  };
-}
-console.log(randomPosition());
+let emp1: Employee = {
+  id: 1,
+  salary: 50000,
+  name: "Alice",
+  phone: "987-654-3210", 
+};
+
+let emp2: Employee = {
+  id: 2,
+  salary: 50000,
+  name: "Andrew",
+  phone: "456-789-1230", 
+};
+// แก้ไข properties ของ emp1
+// emp1.name = "Bob"; // Valid
+// emp1.phone = "123-456-7890"; // Valid
+// emp1.salary = 60000; // Valid
+// emp1.id = 2; // Valid
+
+console.log(emp1, emp2);
